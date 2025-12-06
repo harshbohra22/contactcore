@@ -1,0 +1,49 @@
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2025-12-06T18:40:54.715+05:30  INFO 21556 --- [scm2.0] [           main] com.scm.Application                      : Starting Application v0.0.1-SNAPSHOT using Java 21.0.7 with PID 21556 (C:\Users\dell\OneDrive\Desktop\contactcore\target\scm2.0-0.0.1-SNAPSHOT.jar started by dell in C:\Users\dell\OneDrive\Desktop\contactcore)
+2025-12-06T18:40:54.725+05:30  INFO 21556 --- [scm2.0] [           main] com.scm.Application                      : The following 1 profile is active: "dev"
+2025-12-06T18:41:02.641+05:30  INFO 21556 --- [scm2.0] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-06T18:41:03.153+05:30  INFO 21556 --- [scm2.0] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 434 ms. Found 2 JPA repository interfaces.
+2025-12-06T18:41:10.284+05:30  INFO 21556 --- [scm2.0] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-12-06T18:41:10.416+05:30  INFO 21556 --- [scm2.0] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T18:41:10.416+05:30  INFO 21556 --- [scm2.0] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-12-06T18:41:10.739+05:30  INFO 21556 --- [scm2.0] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T18:41:10.754+05:30  INFO 21556 --- [scm2.0] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 15592 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2025-12-06T18:41:14.358+05:30  INFO 21556 --- [scm2.0] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-06T18:41:15.047+05:30  INFO 21556 --- [scm2.0] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-12-06T18:41:15.387+05:30  INFO 21556 --- [scm2.0] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-06T18:41:17.531+05:30  INFO 21556 --- [scm2.0] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-06T18:41:17.779+05:30  INFO 21556 --- [scm2.0] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-06T18:41:20.441+05:30  INFO 21556 --- [scm2.0] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2792c28
+2025-12-06T18:41:20.445+05:30  INFO 21556 --- [scm2.0] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-06T18:41:26.834+05:30  INFO 21556 --- [scm2.0] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-06T18:41:29.889+05:30  INFO 21556 --- [scm2.0] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-06T18:41:32.260+05:30  INFO 21556 --- [scm2.0] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-06T18:41:35.540+05:30  WARN 21556 --- [scm2.0] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-06T18:41:39.244+05:30  INFO 21556 --- [scm2.0] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-12-06T18:41:40.171+05:30  INFO 21556 --- [scm2.0] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2acacdf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d44f15d, org.springframework.security.web.context.SecurityContextHolderFilter@5d260659, org.springframework.security.web.header.HeaderWriterFilter@59929512, org.springframework.web.filter.CorsFilter@674c9079, org.springframework.security.web.authentication.logout.LogoutFilter@366fd3cb, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@6f3cf9ac, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2ce5ea69, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7b2fb8f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5074893, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@418f3cde, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b5854a7, org.springframework.security.web.access.ExceptionTranslationFilter@2ec3b5dd, org.springframework.security.web.access.intercept.AuthorizationFilter@7efcdcde]
+2025-12-06T18:41:43.773+05:30  INFO 21556 --- [scm2.0] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
+2025-12-06T18:41:43.855+05:30  INFO 21556 --- [scm2.0] [           main] com.scm.Application                      : Started Application in 51.441 seconds (process running for 54.861)
+Hibernate: select u1_0.user_id,u1_0.about,u1_0.email,u1_0.email_token,u1_0.email_verified,u1_0.enabled,u1_0.user_name,u1_0.password,u1_0.phone_number,u1_0.phone_verified,u1_0.profile_pic,u1_0.provider,u1_0.provider_user_id from users u1_0 where u1_0.email=?
+Hibernate: select rl1_0.user_user_id,rl1_0.role_list from user_role_list rl1_0 where rl1_0.user_user_id=?
+2025-12-06T19:32:50.366+05:30  INFO 21556 --- [scm2.0] [nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T19:32:50.401+05:30  INFO 21556 --- [scm2.0] [nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T19:32:50.720+05:30  INFO 21556 --- [scm2.0] [nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 313 ms
+2025-12-06T19:32:56.109+05:30  WARN 21556 --- [scm2.0] [nio-8083-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8083-exec-2][login] Deprecated unwrapped fragment expression "message::messagebox" found in template login, line 21, col 14. Please use the complete syntax of fragment expressions instead ("~{message::messagebox}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-12-06T19:33:26.527+05:30  WARN 21556 --- [scm2.0] [nio-8083-exec-6] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,106] milliseconds.
+Hibernate: select u1_0.user_id,u1_0.about,u1_0.email,u1_0.email_token,u1_0.email_verified,u1_0.enabled,u1_0.user_name,u1_0.password,u1_0.phone_number,u1_0.phone_verified,u1_0.profile_pic,u1_0.provider,u1_0.provider_user_id from users u1_0 where u1_0.email=?
+Hibernate: select u1_0.user_id,u1_0.about,u1_0.email,u1_0.email_token,u1_0.email_verified,u1_0.enabled,u1_0.user_name,u1_0.password,u1_0.phone_number,u1_0.phone_verified,u1_0.profile_pic,u1_0.provider,u1_0.provider_user_id,c1_0.user_user_id,c1_0.id,c1_0.address,c1_0.cloudinary_image_public_id,c1_0.description,c1_0.email,c1_0.favorite,c1_0.linked_in_link,c1_0.name,c1_0.phone_number,c1_0.picture,c1_0.website_link from users u1_0 left join contact c1_0 on u1_0.user_id=c1_0.user_user_id where u1_0.user_id=?
+Hibernate: insert into users (about,email,email_token,email_verified,enabled,user_name,password,phone_number,phone_verified,profile_pic,provider,provider_user_id,user_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?)
+Hibernate: insert into user_role_list (user_user_id,role_list) values (?,?)
+Hibernate: insert into user_role_list (user_user_id,role_list) values (?,?)
+2025-12-06T19:33:50.249+05:30  WARN 21556 --- [scm2.0] [nio-8083-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8083-exec-7][login] Deprecated unwrapped fragment expression "message::messagebox" found in template login, line 21, col 14. Please use the complete syntax of fragment expressions instead ("~{message::messagebox}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+removing message from session

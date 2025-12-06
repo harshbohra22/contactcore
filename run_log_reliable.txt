@@ -1,0 +1,54 @@
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2025-12-06T18:30:43.453+05:30  INFO 27576 --- [scm2.0] [           main] com.scm.Application                      : Starting Application v0.0.1-SNAPSHOT using Java 21.0.7 with PID 27576 (C:\Users\dell\OneDrive\Desktop\contactcore\target\scm2.0-0.0.1-SNAPSHOT.jar started by dell in C:\Users\dell\OneDrive\Desktop\contactcore)
+2025-12-06T18:30:43.466+05:30  INFO 27576 --- [scm2.0] [           main] com.scm.Application                      : The following 1 profile is active: "dev"
+2025-12-06T18:30:54.015+05:30  INFO 27576 --- [scm2.0] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-06T18:30:54.373+05:30  INFO 27576 --- [scm2.0] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 304 ms. Found 2 JPA repository interfaces.
+2025-12-06T18:31:01.549+05:30  INFO 27576 --- [scm2.0] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T18:31:01.694+05:30  INFO 27576 --- [scm2.0] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T18:31:01.695+05:30  INFO 27576 --- [scm2.0] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-12-06T18:31:02.038+05:30  INFO 27576 --- [scm2.0] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T18:31:02.049+05:30  INFO 27576 --- [scm2.0] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 18116 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2025-12-06T18:31:04.665+05:30  INFO 27576 --- [scm2.0] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-06T18:31:05.290+05:30  INFO 27576 --- [scm2.0] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-12-06T18:31:05.623+05:30  INFO 27576 --- [scm2.0] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-06T18:31:07.470+05:30  INFO 27576 --- [scm2.0] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-06T18:31:07.626+05:30  INFO 27576 --- [scm2.0] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-06T18:31:11.500+05:30  INFO 27576 --- [scm2.0] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a8b42a3
+2025-12-06T18:31:11.513+05:30  INFO 27576 --- [scm2.0] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-06T18:31:18.803+05:30  INFO 27576 --- [scm2.0] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-06T18:31:19.484+05:30  INFO 27576 --- [scm2.0] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-06T18:31:22.594+05:30  INFO 27576 --- [scm2.0] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-06T18:31:25.861+05:30  WARN 27576 --- [scm2.0] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-06T18:31:29.649+05:30  INFO 27576 --- [scm2.0] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-12-06T18:31:30.198+05:30  INFO 27576 --- [scm2.0] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c79071e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e147821, org.springframework.security.web.context.SecurityContextHolderFilter@418f3cde, org.springframework.security.web.header.HeaderWriterFilter@5d260659, org.springframework.web.filter.CorsFilter@e73787, org.springframework.security.web.authentication.logout.LogoutFilter@9cdceeb, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@119b837, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2b5854a7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d0993f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c0a4c8b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b7123e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@395065af, org.springframework.security.web.access.ExceptionTranslationFilter@59929512, org.springframework.security.web.access.intercept.AuthorizationFilter@5901757]
+2025-12-06T18:31:34.265+05:30  WARN 27576 --- [scm2.0] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-06T18:31:34.282+05:30  INFO 27576 --- [scm2.0] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-06T18:31:34.297+05:30  INFO 27576 --- [scm2.0] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-06T18:31:34.423+05:30  INFO 27576 --- [scm2.0] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-06T18:31:34.531+05:30  INFO 27576 --- [scm2.0] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-06T18:31:34.759+05:30 ERROR 27576 --- [scm2.0] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+

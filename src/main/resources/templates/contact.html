@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+
+<head>
+  <title>Contact Us Page</title>
+</head>
+
+<body>
+  <div id="content">
+    <div class="min-h-screen bg-gray-50 dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl">
+            Get in Touch
+          </h1>
+          <p class="mt-4 text-xl text-gray-600 dark:text-gray-400">
+            Have questions? We'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 glass-card overflow-hidden">
+
+          <!-- Contact Info (Left Side) -->
+          <div class="p-10 bg-gradient-to-br from-primary-600/90 to-primary-800/90 text-white backdrop-blur-sm">
+            <h2 class="text-2xl font-bold mb-8">Contact Information</h2>
+            <p class="text-primary-100 mb-8">
+              Fill up the form and our team will get back to you within 24 hours.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <i class="fa-solid fa-phone text-2xl text-primary-200"></i>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium">Phone</h3>
+                  <p class="text-primary-100">+1 (555) 123-4567</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <i class="fa-solid fa-envelope text-2xl text-primary-200"></i>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium">Email</h3>
+                  <p class="text-primary-100">support@contactcore.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <i class="fa-solid fa-location-dot text-2xl text-primary-200"></i>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium">Office</h3>
+                  <p class="text-primary-100">
+                    123 Innovation Drive<br>
+                    Tech Valley, CA 94043
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="mt-12">
+              <h3 class="text-lg font-medium mb-4">Follow Us</h3>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary-200 hover:text-white transition-colors"><i
+                    class="fa-brands fa-twitter text-xl"></i></a>
+                <a href="#" class="text-primary-200 hover:text-white transition-colors"><i
+                    class="fa-brands fa-linkedin text-xl"></i></a>
+              </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      console.log("Home page");
+    </script>
+</body>
+
+</html>

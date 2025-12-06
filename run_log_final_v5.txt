@@ -1,0 +1,86 @@
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2025-12-06T20:10:36.736+05:30  INFO 16084 --- [scm2.0] [           main] com.scm.Application                      : Starting Application v0.0.1-SNAPSHOT using Java 21.0.7 with PID 16084 (C:\Users\dell\OneDrive\Desktop\contactcore\target\scm2.0-0.0.1-SNAPSHOT.jar started by dell in C:\Users\dell\OneDrive\Desktop\contactcore)
+2025-12-06T20:10:36.744+05:30  INFO 16084 --- [scm2.0] [           main] com.scm.Application                      : The following 1 profile is active: "dev"
+2025-12-06T20:10:44.170+05:30  INFO 16084 --- [scm2.0] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-06T20:10:44.686+05:30  INFO 16084 --- [scm2.0] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 436 ms. Found 2 JPA repository interfaces.
+2025-12-06T20:10:51.227+05:30  INFO 16084 --- [scm2.0] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-12-06T20:10:51.344+05:30  INFO 16084 --- [scm2.0] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T20:10:51.346+05:30  INFO 16084 --- [scm2.0] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-12-06T20:10:51.695+05:30  INFO 16084 --- [scm2.0] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T20:10:51.699+05:30  INFO 16084 --- [scm2.0] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14550 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2025-12-06T20:10:54.561+05:30  INFO 16084 --- [scm2.0] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-06T20:10:55.311+05:30  INFO 16084 --- [scm2.0] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-12-06T20:10:55.614+05:30  INFO 16084 --- [scm2.0] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-06T20:10:57.141+05:30  INFO 16084 --- [scm2.0] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-06T20:10:57.352+05:30  INFO 16084 --- [scm2.0] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-06T20:11:00.235+05:30  INFO 16084 --- [scm2.0] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4df13dd0
+2025-12-06T20:11:00.250+05:30  INFO 16084 --- [scm2.0] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-06T20:11:05.443+05:30  INFO 16084 --- [scm2.0] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-06T20:11:06.391+05:30  INFO 16084 --- [scm2.0] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-06T20:11:09.337+05:30  INFO 16084 --- [scm2.0] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-06T20:11:12.437+05:30  WARN 16084 --- [scm2.0] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pageController' defined in URL [jar:nested:/C:/Users/dell/OneDrive/Desktop/contactcore/target/scm2.0-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/scm/controllers/PageController.class]: Failed to instantiate [com.scm.controllers.PageController]: Constructor threw exception
+2025-12-06T20:11:12.439+05:30  INFO 16084 --- [scm2.0] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-06T20:11:12.448+05:30  INFO 16084 --- [scm2.0] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-06T20:11:12.597+05:30  INFO 16084 --- [scm2.0] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-06T20:11:12.613+05:30  INFO 16084 --- [scm2.0] [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-06T20:11:12.704+05:30  INFO 16084 --- [scm2.0] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-06T20:11:12.987+05:30 ERROR 16084 --- [scm2.0] [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pageController' defined in URL [jar:nested:/C:/Users/dell/OneDrive/Desktop/contactcore/target/scm2.0-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/scm/controllers/PageController.class]: Failed to instantiate [com.scm.controllers.PageController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1317) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar!/:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar!/:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar!/:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar!/:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar!/:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar!/:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar!/:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar!/:3.2.5]
+	at com.scm.Application.main(Application.java:20) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91) ~[scm2.0-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53) ~[scm2.0-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58) ~[scm2.0-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.scm.controllers.PageController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token(s), misplaced construct(s)
+	Syntax error, insert "}" to complete Statement
+	The target type of this expression must be a functional interface
+	Syntax error on token "package", :: expected
+	Syntax error, insert "}" to complete Block
+	Syntax error, insert "Finally" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	The type PageController is already defined
+
+	at com.scm.controllers.PageController.<init>(PageController.java:29) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.6.jar!/:6.1.6]
+	... 24 common frames omitted
+
