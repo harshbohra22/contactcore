@@ -179,8 +179,7 @@ public class PageController {
                 guestUser.setEnabled(true);
                 guestUser.setEmailVerified(true);
                 guestUser.setPhoneVerified(true);
-                guestUser.setProfilePic(
-                        "https://www.learncodewithdurgesh.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurgesh_sir.35c6cb78.webp&w=1920&q=75");
+                guestUser.setProfilePic("/images/guest_profile.png");
 
                 // Grant full rights
                 guestUser.setRoleList(new ArrayList<>(List.of("ROLE_GUEST", "ROLE_USER")));
